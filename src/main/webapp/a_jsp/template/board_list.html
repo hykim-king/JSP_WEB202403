@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 목록</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>공지사항 목록</h1>
+        <div class="controls-container">
+            <select id="searchCondition">
+                <option value="title">제목</option>
+                <option value="author">작성자</option>
+            </select>
+            <input type="text" id="searchKeyword" placeholder="검색어를 입력하세요">
+            <select id="pageSize">
+                <option value="5">5개씩 보기</option>
+                <option value="10">10개씩 보기</option>
+                <option value="20">20개씩 보기</option>
+            </select>
+            <button id="viewNoticesButton">조회</button>
+            <button id="addNoticeButton">등록</button>
+        </div>
+        <table id="noticeTable">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회 건수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>첫 번째 공지사항</td>
+                    <td>관리자</td>
+                    <td>2024-05-22</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>두 번째 공지사항</td>
+                    <td>관리자</td>
+                    <td>2024-05-21</td>
+                    <td>20</td>
+                </tr>
+                <!-- 추가 공지사항 여기에 넣기 -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button class="page-btn" id="prevPage">&laquo;</button>
+            <span id="pageNumbers"></span>
+            <button class="page-btn" id="nextPage">&raquo;</button>
+        </div>
+    </div>
+
+    <script src="#"></script>
+</body>
+</html>

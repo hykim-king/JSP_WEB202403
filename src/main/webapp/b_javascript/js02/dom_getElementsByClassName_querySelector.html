@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+<style>
+
+</style>
+</head>
+<body>
+	<h2>getElementsByClassName 메서드를 사용하여 클래스 이름으로 요소 선택</h2>
+	<hr/>
+
+  <div class="container">
+     <p class="paragraph">콩국수</p>
+     <p >햄버거</p>
+     <p  class="paragraph">짜장면</p>
+  </div>
+
+ 
+<script>
+    //let element = document.querySelector(".paragraph");//단건
+    
+    //console.log(element.textContent);
+    
+    let elements = document.querySelectorAll(".paragraph");//다건 선택
+    for( let i=0;i<elements.length;i++){
+        console.log(elements[i].textContent);
+    }
+</script>
+
+</body>
+</html>

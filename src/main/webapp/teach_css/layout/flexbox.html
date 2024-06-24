@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스박스 예제</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between; /* 아이템 사이에 여백을 고르게 분배 */
+            flex-direction: column;
+            align-items: center; /* 아이템을 세로로 중앙 정렬 */
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: lightgreen;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">아이템 1</div>
+        <div class="item">아이템 2</div>
+        <div class="item">아이템 3</div>
+    </div>
+</body>
+</html>

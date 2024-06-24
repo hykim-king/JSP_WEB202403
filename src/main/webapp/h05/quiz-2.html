@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>연습문제 2</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+    </style>
+  </head>
+  <body>
+		<div id="container">
+			<h1>Full Stack 개발자 지원서 </h1>
+			<p>Java, HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<h3>개인정보</h3>
+				<ul>
+				  <li>
+				    <label for="sname">이름</label>
+				    <input type="text" id="sname" name="sname" placeholder="공백없이 입력하세요">
+				  </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" name="phone" >
+          </li>				
+				</ul>
+				
+        <h3>지원 분야</h3>
+         <ul>
+          <li>
+            <label><input type="radio" name="field" value="10" id="full_stack" checked="checked" > full stack</label>
+          </li>
+          <li>
+            <label><input type="radio" name="field" value="20" id="front_end"> front end</label>
+          </li>
+          <li>
+            <label><input type="radio" name="field" value="30" id="back_end"> back end</label>
+          </li>                                 
+         </ul>		
+         <h3>지원동기</h3>
+         <textarea rows="5" cols="60" name="motive" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+         <div>
+<!--             <input type="submit" value="접수하기">
+            <input type="reset"  value="다시쓰기"> -->
+            <button type="submit">접수하기</button>
+             <button type="reset">다시쓰기</button>
+         </div>
+			</form>
+		</div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+<style>
+  @font-face {
+     font-family: 'Ostrich'; /* 글꼴이름 */
+     src: local('Ostrich Sans'),
+          url('/WEB02/fonts/ostrich-sans-bold.ttf'), 
+          url('/WEB02/fonts/ostrich-sans-bold.woff'),
+          url('/WEB02/fonts/ostrich-sans-bold.eot');
+  }
+  
+  p {
+    font-size: 30px; /* 글자 크기 */
+  }
+  
+  .wfont {
+    font-family: 'Ostrich', san-serif;
+  }
+</style>
+</head>
+<body>
+  <!-- 
+  @font-face {
+  font-family: 글꼴이름;
+  src: local(사용자 시스템에 해당 글꼴이 있는지) 
+       글꼴파일 경로| 글꼴파일 경로2|글꼴파일 경로3      
+  }
+   -->
+	<h2>web font</h2>
+	<hr/>
+
+  <p>Using Default Fonts</p>
+  <p class="wfont">Using Web Fonts</p>
+</body>
+</html>  

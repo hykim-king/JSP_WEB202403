@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+</head>
+<body>
+	<h2>click</h2>
+	<hr/>
+  <input type="button" id="clickBTN" value="버튼">
+  
+  
+  <script>
+     const btn = document.querySelector("#clickBTN");
+     
+     //이벤트 헨들러 추가
+     btn.addEventListener("click",changeColor);
+     
+     function random(number){
+         return Math.floor(Math.random()*(number)+1);
+     }
+
+     function changeColor(){
+         const rndCol = "rgb("+random(255)+","+random(255)+","+random(255)+")";
+         document.body.style.backgroundColor = rndCol;
+     }     
+     
+  </script>
+</body>
+</html>

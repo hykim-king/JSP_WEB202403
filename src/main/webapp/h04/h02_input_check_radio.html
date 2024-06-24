@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+</head>
+<body>
+	<h2>레드향 주문하기</h2>
+	<hr/>
+	<form action="">
+	  <fieldset>
+	    <legend>상품 선택</legend>
+	    <p><b>주문할 상품을 선택해 주세요.</b></p>
+	    <ul>
+	     <li><label><input type="checkbox" value="s_3" name="s03" id="s03"> 선물용 3kg</label>
+	         <input type="number" min="0" max="5">개(최대 5개) <!-- 숫자를 조절할수 있는 스핀 박스 -->
+	     </li> 
+       <li><label><input type="checkbox" value="s_5" name="s05" id="s05"> 선물용 5kg</label>
+           <input type="number" min="0" max="3" value="1">개(최대 3개) <!-- 숫자를 조절할수 있는 스핀 박스 -->
+       </li>
+       <li><label><input type="checkbox" value="f_3" name="f03" id="f03"> 가정용 3kg</label>
+           <input type="range" min="0" max="5">개(최대 5개) <!-- 숫자를 조절할수 있는 스핀 박스 -->
+       </li>  
+       <li><label><input type="checkbox" value="f_5" name="f05" id="f05"> 가정용 5kg</label>
+           <input type="range" min="0" max="3" value="1">개(최대 3개) <!-- 숫자를 조절할수 있는 스핀 박스 -->
+       </li>            	    
+	    </ul>
+	    
+	    <p><b>포장 선택</b></p>
+	    <ul>
+	      <!-- radio는 name="이름" 동일하게 주어야 함! -->
+	     <li><label><input type="radio"  name="radio_gift"  value="yes">선물포장 </label></li>
+	     <li><label><input type="radio"  name="radio_gift"  value="no">선물 포장 안 함</label></li>
+	    </ul>
+	    
+	  </fieldset>
+	  <fieldset>
+	    <legend>배송 정보</legend>  
+	    <ul>
+	       <li>
+	         <label for="user_name">이름</label>
+	         <input type="text" id="user_name" name="user_name">
+	       </li>
+         <li>
+           <label for="addr">배송 주소</label>
+           <input type="text" id="addr" name="addr">
+         </li>	     
+         <li>
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email">
+         </li>
+         <li>
+          <label for="phone">연락처</label>
+          <input type="tel"  id="phone" name="phone">
+         </li>         
+           
+	    </ul>
+	  </fieldset>    
+  </form>
+</body>
+</html>

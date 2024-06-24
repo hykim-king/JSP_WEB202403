@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+<style>
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+  line-height: 100px;
+}
+
+/* relative요소를 일반적인 문서 흐름에 따라 배치하고, 
+   자기 자신을 기준으로 top, right, bottom, left의 값에 따라 오프셋을 적용합니다. 
+*/
+#two {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: blue;
+}
+</style>
+</head>
+<body>
+	<h2>position:relative</h2>
+	<hr/>
+	<div class="box" id="one">One</div>
+	<div class="box" id="two">Two</div>
+	<div class="box" id="three">Three</div>
+	<div class="box" id="four">Four</div>
+</body>
+</html>

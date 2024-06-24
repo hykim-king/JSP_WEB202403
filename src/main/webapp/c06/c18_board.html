@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+	body {
+	    font-family: "Nanum Gothic", sans-serif;
+	    background-color: #f4f4f4;
+	    margin: 0;
+	    padding: 0;
+	}
+	
+	.container {
+	    width: 80%;
+	    margin: 20px auto;
+	    background: #fff;
+	    padding: 20px;
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	
+	h2 {
+	    text-align: left;
+	    margin-bottom: 20px;
+	}
+
+	
+  table {
+    width: 800px;  
+    border: 1px solid #222;
+    border-collapse: collapse;
+  }
+  
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th {
+     background-color: #00A2E8; /* 배경색 */
+     color: white; /* 글자색 */
+     padding: 7px;
+     text-align: center;
+     border: 1px solid #ddd;
+     font-weight: bold;
+   }  
+  
+   .r_align {
+      text-align: right;
+   }
+   .c_align {
+      text-align: center;
+   }
+    
+   .invisible_col{
+     display: none; 
+   } 
+</style>
+</head>
+<body>
+
+	<div class="container">
+  <h2>게시판-목록</h2>
+	  <table>
+	    <thead>
+		    <tr>
+		      <th>NO</th>
+		      <th>제목</th>
+		      <th>등록자</th>
+		      <th>등록일</th>
+		      <th>조회수</th>
+		      <th class="invisible_col">SEQ</th>
+		    </tr>
+	    </thead>
+	    <tbody>
+		    <tr>
+		      <td class="c_align">1</td>
+		      <td>오늘은 즐거운 목요일1</td>  
+		      <td>이상무</td>
+		      <td  class="c_align">14:25</td>
+		      <td  class="r_align">1</td>
+		      <td class="invisible_col">1</td> 
+		    </tr>
+		    <tr>
+		      <td class="c_align">2</td>
+		      <td>오늘은 즐거운 목요일2</td>
+		      <td>이상무</td>
+		      <td class="c_align">14:25</td>
+		      <td  class="r_align">1</td>
+		      <td class="invisible_col">2</td>
+		    </tr>
+		    <tr>
+		      <td class="c_align">3</td>
+		      <td>오늘은 즐거운 목요일3</td>
+		      <td>이상무</td>
+		      <td class="c_align">2024/05/30</td>
+		      <td  class="r_align">1</td>
+		      <td class="invisible_col">3</td>
+		    </tr>    
+		    <tr>
+		      <td class="c_align">4</td>  
+		      <td>오늘은 즐거운 목요일4</td>
+		      <td>이상무</td>
+		      <td class="c_align">2024/05/30</td>
+		      <td  class="r_align">1</td>
+		      <td class="invisible_col">4</td>
+		    </tr>          
+		    <tr>
+		      <td class="c_align">5</td>
+		      <td>오늘은 즐거운 목요일5</td>
+		      <td>이상무</td>
+		      <td class="c_align">2024/05/30</td>
+		      <td  class="r_align">1</td>
+		      <td class="invisible_col">5</td>
+		    </tr>  
+	    </tbody>     
+	  </table>
+  </div>
+</body>
+</html>

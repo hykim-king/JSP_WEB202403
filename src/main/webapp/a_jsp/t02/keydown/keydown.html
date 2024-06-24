@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keydown Event</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+
+    <script>
+        let input = document.getElementById("myInput");
+        input.addEventListener("keydown", function(event) {
+        	  console.log("Key pressed:", event.key, event.keyCode);
+        	
+            if(event.key == 'Enter'){
+            	console.log(`input.value:${input.value}`);
+            }
+            
+        });
+    </script>
+</body>
+</html>

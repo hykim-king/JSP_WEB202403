@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+</head>
+<body>
+	<h2>회원 가입을 환영합니다</h2>
+	<hr/>
+	<form action="#">
+	  <fieldset>
+	    <legend>사용자 정보</legend>
+	    <ul>
+	      <li><label>아이디<input type="text" name="user_id" id="user_id"> </label></li>
+	      <li><label>이메일<input type="email" name="email" id="email"> </label></li>
+	      <li><label>비밀번호<input type="password" name="pw1" id="pw1"> </label></li>
+	      <li><label>비밀번호 확인<input type="password" name="pw2" id="pw2"> </label></li>
+	    </ul>
+	  </fieldset>
+	  
+	  <fieldset>
+	    <legend>이벤트와 새로운 소식</legend>  
+	    <label><input type="radio" name="email_rec"  id="email_rec" value="yes">메일 수신</label>
+	    <label><input type="radio" name="email_rec"  id="email_rec" value="no" checked="checked">메일 수신 안 함</label>
+	  </fieldset>  
+	  <!--reset: form control초기화  -->
+	  <input type="submit" value="가입하기"> <input type="reset" value="취소">
+  </form>
+</body>
+</html>

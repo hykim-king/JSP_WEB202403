@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating Layout Example</title>
+  <style>
+    /* 플로팅 레이아웃 스타일 */
+    .box {
+      width: 200px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    /* clearfix 속성 */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, nunc et ultricies venenatis, est mi dapibus turpis.</p>
+</div>
+
+<div class="box">
+  <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, nunc et ultricies venenatis, est mi dapibus turpis.</p>
+</div>
+
+<div class="clearfix">999</div>
+
+</body>
+</html>

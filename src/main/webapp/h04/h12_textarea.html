@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/WEB02/css/order.css">
+<meta charset="UTF-8">
+<title>행복코딩</title>
+</head>
+<body>
+          
+	<div id="container">   
+	  <h1>레드향 주문하기</h1>
+    <hr/> 
+		<form action="">
+	  <fieldset>
+	    <legend>배송 정보</legend>
+	    <ul id="shipping">
+		    <li>
+			    <label for="user_name">이름</label>
+			    <input type="text" id="user_name" name="user_name">
+		    </li>
+	      <li>
+	        <label for="addr">배송 주소</label>
+	        <input type="text" id="addr" name="addr">
+	      </li>	
+	      <li>
+	        <label for="email">이메일</label>
+	        <input type="email" id="email" name="email">
+	      </li> 
+	      <li>
+	        <label for="phone">연락처</label>
+	        <input type="tel" id="phone" name="phone">
+	      </li>    
+	      <li>
+	        <label for="d_day">배송 지정</label>
+	        <input type="date" id="d_day" name="d_day">(주문일로부터 최소 3일 이후)
+	      </li>    
+	      <li>
+	        <label for="memo">메모</label>
+	        <textarea rows="4" cols="40" name="memo" id="memo"></textarea>
+	      </li>
+	                     
+	    </ul>
+	  </fieldset>
+	  <div>
+	    <input type="submit" value="주문하기">
+	    <input type="reset" value="주문취소">
+	  </div>
+	  
+	  </form>
+  </div>
+</body>
+</html>

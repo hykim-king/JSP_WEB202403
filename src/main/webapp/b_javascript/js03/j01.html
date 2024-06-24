@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+</head>
+<body>
+	<h2>keydown event</h2>
+	<hr/>
+
+  <input type="text" id="search_word"> 
+
+  <script>
+     const input = document.querySelector("#search_word");
+     
+     //이벤트 헨들러
+     input.addEventListener("keydown", function(event){
+    	 console.log("keydown ",event.key, event.keyCode);
+    	 
+    	 if(event.keyCode == 13){
+    		 console.log(`input.value:${input.value}`);
+    	 }
+    	 
+     });
+  
+  </script> 
+
+</body>
+</html>

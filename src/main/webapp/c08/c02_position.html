@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>행복코딩</title>
+<style>
+  p {
+    width: 500px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    line-height: 2;
+  }
+  
+  #static {
+    position: static;
+  }
+  
+  #relative-1 {
+    position: relative;
+  }
+  
+  #relative-2 {
+   /* 요소를 원래 위치에서 상대적으로 이동시킵니다. 요소가 문서 흐름에서 차지하는 공간은 유지됩니다. */
+    position: relative;
+    left: 100px; /* 왼쪽으로 100px이동 */
+    top: -50px;   /* 위쪽으로 100px이동: 위쪽으로 이동 */
+  }  
+  
+  /* 요소를 뷰 포트(브라우저 창)를 기준으로 배치 합니다. 스크롤을 해도 위치가 고정되어 있습니다. */
+  
+  #fixed {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    position: fixed;
+    right: 30px; /* 브라우저 창 기준으로 오른쪽 30px */
+    top: 30px;   /* 브라우저 창 기준으로 위쪽에서 30px */
+  }
+  
+  
+</style>
+</head>
+<body>
+  
+   <p id="static">Ex et adipisicing voluptate aliqua cupidatat nulla. Laboris est sint sit aliqua enim. Aute Lorem eu sint aute sunt proident. Do culpa consectetur elit duis laboris reprehenderit incididunt nulla. Pariatur fugiat voluptate ea non amet cupidatat. </p>
+   <p id="relative-1">Lorem ipsum reprehenderit adipisicing exercitation enim velit veniam incididunt sit consectetur elit exercitation. Magna Lorem excepteur occaecat cupidatat sunt proident tempor do nostrud labore cillum non exercitation voluptate. </p>
+   <p id="relative-2">Excepteur voluptate ad irure ipsum duis. Deserunt cupidatat commodo proident eu mollit cillum commodo quis quis et ad. Velit id duis enim reprehenderit eu dolor Lorem excepteur excepteur. </p>
+   <p id="fixed"></p>
+</body>
+</html>

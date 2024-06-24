@@ -1,0 +1,75 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 800px; /* 컨테이너 너비 */
+	margin: 0 auto; /* 컨테이너 화면 중앙에 배치 */
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td, th {
+	border-bottom: 1px solid lightgrey;
+	padding: 5px;
+}
+
+th {
+	background: gray;
+	color: #fff;
+}
+
+.txt_left {
+	text-align: left;
+}
+
+.txt_center {
+	text-align: center;
+}
+
+.txt_right {
+	text-align: right;
+}
+
+.form-group {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+label, select, input[type="search"] {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+select, input[type="search"], input[type="button"] {
+	box-sizing: border-box;
+	height: 40px;
+}
+
+.button-group {
+	margin-left: auto;
+}
+
+.button-group input[type="button"] {
+	background-color: blue;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.button-group input[type="button"]:hover {
+	background-color: #0033cc;
+}
